@@ -7,6 +7,7 @@ namespace Palindrom
     {
         private static readonly int max = 99999;
         private static readonly int min = 10000;
+
         static void Main(string[] args)
         {
             var primeNumbers = new List<long>();
@@ -29,7 +30,7 @@ namespace Palindrom
                 {
                     long value2 = primeNumbers[j];
                     long value = value1 * value2;
-                    
+
                     if (!IsPalindrom(value))
                         continue;
 
